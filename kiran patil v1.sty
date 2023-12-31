@@ -1,0 +1,327 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{tikz}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% % Sections formatting
+% \titleformat{\section}{
+%   \vspace{-4pt}\scshape\raggedright\large\bfseries
+% }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large 
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+
+% Ensure that generated pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2pt}}}
+\newcommand{\classesList}[4]{\item\small{#1 #2 #3 #4\vspace{-2pt}}}
+
+% Remove bullet from resumeSubheading
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-2pt}%
+  \item[]%
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}%
+  \vspace{-7pt}%
+}
+
+% Remove bullet from resumeProjectHeading
+\newcommand{\resumeProjectHeading}[2]{%
+  \vspace{-2pt}%
+  \item[]%
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2}\\
+  \end{tabular*}%
+  \vspace{-7pt}%
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\newcommand{\roundbullet}{\tiny\textbullet}
+\renewcommand\labelitemi{\tiny\roundbullet}
+\renewcommand\labelitemii{\tiny\roundbullet}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label=\roundbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=\roundbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Custom item list environment with reduced itemsep and zero left margin
+\newenvironment{zeromarginitemize}{\begin{itemize}[leftmargin=0pt, label={}, itemsep=-3pt]}{\end{itemize}}
+
+
+% Custom item list environment with margin for education section
+\newenvironment{educationitemize}{\begin{itemize}[leftmargin=0pt, label={}, itemsep=2pt]}{\end{itemize}}
+
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Kiran Patil } \\ \vspace{1pt}
+    235 Kitwad, Chandgad, Kolhapur, Maharastra 416508 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8767065017 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{kiran.kp2004@gmail.com \ExternalLink }} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/kiran-patil-007 \ExternalLink }}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/patilk2002 \ExternalLink }}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace{1pt}
+\section{Education}
+\vspace{1pt}
+\begin{educationitemize}
+    \resumeSubheading
+    {Veermata Jijabai Technological Institute, Mumbai}{Dec. 2021 -- July 2024}
+    {Bachelor of Technology in Computer Engineering}{CPI : 8.12} 
+    \resumeSubheading
+    {K.J.Somaiya Polytechnic, Mumbai}{Aug. 2018 -- Sept 2021}
+    {Diploma in Computer Engineering}{98.50 \%}
+    \resumeSubheading
+    {S. T. High School, Kolhapur}{March 2018}
+    {Secondary School Certificate SSC}{95.60 \%}
+\end{educationitemize}
+
+
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Veermata Jijabai Technological Institute}{Dec. 2021 -- July 2024}
+%       {Bachelor of Technology in computer Engineering}{Mumbai, Maharashtra} 
+%     \resumeSubheading
+%       {K.J.Somaiya Polytechnic,Mumbai}{Aug. 2018 -- Sept 2021}
+%       {Diploma in computer Engineering}{Mumbai, Maharashtra}
+%     \resumeSubheading
+%       {ST. High School Kolhapur}{March 2018}
+%       {Secondary school certificate SSC}{Kolhapur, Maharashtra}
+%   \resumeSubHeadingListEnd
+% ... (rest of the document remains the same)
+
+
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%           {\href{}{\textbf{Mondelēz International}} $|$ \emph{MDS Engineering Intern}}{Jun 2023-Aug 2023}
+%         % \resumeProjectHeading
+%         %   {\textbf{Mondelēz International} $|$ \emph{Software Engineer Intern}}{June 2023 -- July 2023}          
+%       \resumeItemListStart
+%         \resumeItem{Developed an application aimed at creating a comprehensive repository of skills and proficiency levels of resources. It Significantly reduced the time and effort required to identify skill gaps among our resources.}
+%         \resumeItem{Application served as a powerful tool to match the right resources with the intended skills,efficient and effective utilization of the workforce.}
+%         \resumeItem{Utilized Quick base platform to Develop the application visualized the data in optimized Manner, creating an intuitive dashboard for swift insights retrieval, facilitating informed decisions within seconds.}
+%       \resumeItemListEnd      
+
+    
+%   \resumeSubHeadingListEnd
+% \vspace{-16pt}
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\begin{zeromarginitemize}
+    \resumeProjectHeading
+    {\href{https://drive.google.com/file/d/1DVmBoDBDPLUI9w1SXcPvZyL0QR0-DTXo/view?usp=sharing}{\textbf{Mondelēz International \ExternalLink}} $|$ \emph{MDS Engineering Intern}}{Jun 2023-Aug 2023}
+    \resumeItemListStart
+     \vspace{2pt}
+     \resumeItem{\textbf{Lead} the Development of \textbf{skill repo} application, utilizing Quick Base platform to streamline resource matching, swift insights retrieval and facilitate informed decision-making with an intuitive dashboard.}
+    \resumeItem{Application served as a \textbf{powerful tool} to match the right resources with the intended skills, efficient and effective utilization of the workforce. Got \textbf{Bravo} from the stakeholders.}
+    \resumeItem{Developed an \textbf{AutoCOA} application utilizing NLP (IDP) capabilities in \textbf{Azure} \textbf{Studio} and Power Platforms, effectively eliminating manual CoA  work and significantly saving valuable time.}   
+    
+    
+    
+    % \resumeItem{Developed an application aimed at creating a comprehensive repository of skills and proficiency levels of resources. It significantly reduced the time and effort required to identify skill gaps among our resources.}
+    % \resumeItem{Application served as a powerful tool to match the right resources with the intended skills, efficient and effective utilization of the workforce.}
+    % \resumeItem{Utilized Quick base platform to develop the application, visualized the data in an optimized manner, creating an intuitive dashboard for swift insights retrieval, facilitating informed decisions within seconds.}
+    \resumeItemListEnd
+    
+    \resumeProjectHeading
+    {\href{}{\textbf{Freelancer}} $|$ \emph{Web Developer}}{Oct 2022-Dec 2022}
+    \resumeItemListStart
+    \vspace{2pt}
+    \resumeItem{Created a \textbf{Country-info} web application for a client which provides information such as currency, common phrases, and travel destinations.}
+    \resumeItemListEnd
+\end{zeromarginitemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\begin{zeromarginitemize}
+    \resumeProjectHeading
+    {\href{https://youtu.be/mk2m4okgUT0}{\textbf{Smart Attendance Management \ExternalLink }} $|$ \emph{ML, Python, Numpy, Pandas, Matplotlib, Tkinter, OpenCV}}{}
+    \resumeItemListStart
+    \resumeItem{Developed an intelligent system for efficient classroom attendance management.}
+    \resumeItem{It utilizes face recognition technology and data analysis along with visualization for easy comprehension.}
+    \resumeItem{The system calculates a defaulter's list and sends automated notifications to their parents via email for poor attendance.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\href{https://resumebuilder2023.netlify.app/}{\textbf{Resume Builder \ExternalLink }}$|$ \emph{HTML, CSS, JS, Bootstrap, PHP, MySQL}}{}
+    \resumeItemListStart
+    \resumeItem{Created an application designed to make resume creation simple and convenient for individuals.}
+    \resumeItem{It features an easy-to-use form where users can input their information, and the system promptly generates a resume in PDF format, streamlining the entire process.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\href{https://patilk2002.github.io/AnyMap/}{\textbf{AnyMap \ExternalLink }}$|$ \emph{HTML, CSS, JS, Bootstrap, Google Cloud Platform}}{}
+    \resumeItemListStart
+    \resumeItem{AnyMap is an online web application that delivers interactive and fully customizable maps to its users.}
+    \resumeItem{It holds the ability to serve various industries like universities, commercial businesses, and construction sites. AnyMap utilizes the Google Cloud platform to provide tailored maps that meet the specific needs of its users.}
+    \resumeItemListEnd
+\end{zeromarginitemize}
+
+
+
+%-----------COMPETITION-----------
+\section{Competitions}
+    \vspace{1pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+            {\href{}{\textbf{Codefine}} $|$ \emph{Technovanza VJTI}}{January 2021}
+            \vspace{-10pt}
+          \resumeItemListStart
+            \resumeItem{Attained the \textbf{2nd} position in codefine challenge within data science domain}
+            \resumeItem{Executed the development of an Machine Learning module for plant disease recognition}
+          \resumeItemListEnd  
+          \vspace{-5pt}
+%
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{\hspace{40.5pt}: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
+     \textbf{Libraries}{\hspace{48pt}: Open CV, TensorFlow, NumPy, Matplotlib } \\
+     \textbf{Frameworks}{\hspace{32pt}: MERN, Flutter, Flask } \\
+     \textbf{Developer Tools}{\hspace{11.5pt}: VS Code, Eclipse, Google Cloud Platform, Quick base, Power Apps, PowerAutomte, Azure Studio}
+    %  \textbf{Skills}{\hspace{32pt}Data Structures, Effective-Thinkin} \\
+    }}
+ \end{itemize}
+ 
+ \vspace{-7pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Certifications}
+    % \resumeSubHeadingListStart
+    %     \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+        \resumeItemListStart
+            \resumeItem{\href{https://coursera.org/share/d8719db2edc247a3165fb41251e563fe}{AI for everyone (coursera) \ExternalLink }}            \resumeItem{\href{https://coursera.org/share/d9252bd5998f461c9d927258d50cace2}{Augmented Reality (coursera) \ExternalLink }}            \resumeItem{\href{https://drive.google.com/file/d/1ebVc1K7B1HOsjk0HOz6ptKsBPTEz9yiJ/view?usp=sharing}{Python from Great Learning Quantum Computing \ExternalLink }}
+        \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+\end{document}
